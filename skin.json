@@ -1,6 +1,13 @@
 {
 	"name": "Material", 
-	"author": "Samantha Nguyen",
+	"namemsg": "skinname-Material",
+	"version": "1.0.2",
+	"author": [
+		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
+		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
+		"[https://mediawiki.org/wiki/User:Jack_Phoenix Jack Phoenix]",
+		"[https://mediawiki.org/wiki/User:George_Barnick George Barnick]"
+	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Material",
 	"descriptionmsg": "material-desc",
 	"namemsg": "material",
@@ -10,20 +17,33 @@
 		"material": "Material"
 	},
 	"AutoloadClasses": {
-		"SkinFooBar": "FooBar.skin.php"
+		"SkinMaterial": "Material.skin.php",
+		"MaterialTemplate": "Material.skin.php"
 	},
 	"MessageDirs": {
 		"Material": "i18n"
 	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Material"
+	},
 	"ResourceModules": {
 		"skins.material": {
 				"styles": {
-						"resources/screen.css": { "media": "screen" },
-						"resources/print.css": { "media": "print" }
+					"material/styles/print.less": {
+						"media": "print"
+					},
+					"material/styles/variables.less": {
+						"media": "screen"
+					},
+					"material/styles/main.less": {
+						"media": "screen"
+					}
 				}
 		},
 		"skins.material.js": {
 			"scripts": [
+				"material/scripts/main.js"
 			],
 			"position": "top",
 			"dependencies": "jquery.ui.dialog"
@@ -33,4 +53,5 @@
 		"localBasePath": "",
 		"remoteSkinPath": "Material"
 	},
+	"manifest_version": 1
 }
