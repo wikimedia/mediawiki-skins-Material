@@ -11,7 +11,7 @@
 	"url": "https://www.mediawiki.org/wiki/Skin:Material",
 	"descriptionmsg": "material-desc",
 	"namemsg": "material",
-	"license-name": "GPL-3.0+",
+	"license-name": "GNU-GPL-3.0+",
 	"type": "skin",
 	"ValidSkinNames": {
 		"material": "Material"
