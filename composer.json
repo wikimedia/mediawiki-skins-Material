@@ -23,7 +23,7 @@
 		"issues": "https://github.com/SamanthaNguyen/mediawiki-skins-Material/issues"
 	},
 	"require": {
-		"php": ">=5.4.4"
+		"php": ">=5.4.4",
 		"param-processor/param-processor": "~1.0.0"
 	}
 }
