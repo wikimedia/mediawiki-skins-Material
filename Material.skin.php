@@ -10,37 +10,29 @@
  * @author George Barnick
  */
 
-// SkinTemplate class
-// @ingroup Skins
 class SkinMaterial extends SkinTemplate {
-	public $skinname = 'material', 
+	public $skinname = 'material',
 		$stylename = 'Material',
-		$template = 'MaterialTemplate', $useHeadElement = true;
-
+		$template = 'MaterialTemplate',
+		$useHeadElement = true;
 	// Add JS via ResourceLoader
- 	// @param OutputPage $out
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 		$out->addModules( 'skins.material.js' );
 	}
-
 	// Add CSS via ResourceLoader
-	// @param $out OutputPage
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( array(
-			'mediawiki.skinning.interface', 
+			'mediawiki.skinning.interface',
 			'skins.material'
 		) );
 	}
-}
-
+ }
 // BaseTemplate class
-// @ingroup Skins
 class MaterialTemplate extends BaseTemplate {
 	public function execute() {
 		global $wgVersion;
-		
 		$this->html( 'headelement' );
 		?>
 		<header id="mw-header" role="group">
@@ -102,6 +94,27 @@ class MaterialTemplate extends BaseTemplate {
 				</ul>
 			</nav>
 		</header>
+		<nav id="nav-menu" role="navigation">
+			<span class="menu" aria-label="menu button"><!-- some icon for a menu --></span>
+			<?php foreach ( $this->getSidebar() as $boxName => $box ) { ?>
+				<div id="<?php echo Sanitizer::escapeId( $box['id'] ) ?>" class="sidebar-group" <?php echo Linker::tooltip( $box['id'] ) ?>>
+				<?php
+				if ( is_array( $box['content'] ) ) { ?>
+					<div class="sidebar-header"><?php echo $boxName ?></div>
+						<ul>
+						<?php
+						foreach ( $box['content'] as $key => $item ) {
+							echo $this->makeListItem( $key, $item );
+						} ?>
+						</ul>
+				<?php
+				} else {
+					echo $box['content'];
+				} ?>
+				</div>
+				<?php
+			} ?>
+		</nav>
 		<?php //if ( $this->data['newtalk'] ) { ?>
 			<div class="new-talk md-tile" role="dialog" aria-live="polite">
 				<?php $this->html( 'newtalk' ); ?>
@@ -112,10 +125,8 @@ class MaterialTemplate extends BaseTemplate {
 				<?php $this->html( 'sitenotice' ); ?>
 			</div>
 		<?php } ?>
-		<main class="mw-body-content md-tile">
-			<?php 
-				if ( $this->data['title'] != '' ) { 
-			?>
+		<div class="mw-body-content md-tile" role="main">
+			<?php if ( $this->data['title'] != '' ) { ?>
 				<section id="title-section">
 					<?php // page status indicators
 						$oldVersion = version_compare( $wgVersion, '1.25', '<=' );
@@ -125,36 +136,18 @@ class MaterialTemplate extends BaseTemplate {
 							}
 						}
 					?>
-					<h1 class="first-heading">
-						<?php $this->html( 'title' ); ?>
-					</h1>
+					<h1 class="first-heading"><?php $this->html( 'title' ); ?></h1>
 					<?php
 						if( isset( $_GET["printable"] ) && trim( $_GET["printable"] ) === 'yes' ){
 							?><div id="site-sub"><?php $this->msg( 'tagline' ); ?></div>
 						<?php
 						}
 					?>
-					
-					<?php 
-						if ( $this->data['subtitle'] || $this->data['undelete'] ) { 
-					?>
-							<h2 id="content-sub">
-								<?php $this->html( 'subtitle' ); $this->html( 'undelete' ); ?>
-							</h2>
-					<?php 
-						} 
-					?>
-					
-					<ul class="content-tabs">
-						<?php
-							foreach ( $this->data['content_navigation'] as $category => $tabs ) {
-								foreach ( $tabs as $key => $tab ) {
-									echo $this->makeListItem( $key, $tab );
-								}
-							}
-						?>
-					</ul>
-					
+					<?php if ( $this->data['subtitle'] || $this->data['undelete'] ) { ?>
+						<div id="content-sub">
+							<?php $this->html( 'subtitle' ); $this->html( 'undelete' ); ?>
+						</div>
+					<?php } ?>
 					<ul class="content-tabs">
 						<?php
 							foreach ( $this->data['content_navigation'] as $category => $tabs ) {
@@ -165,10 +158,8 @@ class MaterialTemplate extends BaseTemplate {
 						?>
 					</ul>
 				</section>
-			<?php 
-				} 
-			?>
-			
+			<?php } ?>
+
 			<?php $this->html( 'bodytext' ) ?>
 			<?php
 				$this->html( 'catlinks' );
@@ -176,16 +167,16 @@ class MaterialTemplate extends BaseTemplate {
 					$this->html( 'dataAfterContent' );
 				}
 			?>
-		</main>
+		</div>
 		<footer id="mw-footer" role="contentinfo">
 			<?php foreach ( $this->getFooterLinks() as $category => $links ) { ?>
-				<ul id="nav-footer" role="navigation">
+				<nav id="nav-footer" role="navigation">
+					<ul>
 					<?php foreach ( $links as $key ) { ?>
-						<li>
-							<?php $this->html( $key ) ?>
-						</li>
+						<li><?php $this->html( $key ) ?></li>
 					<?php } ?>
-				</ul>
+					</ul>
+				</nav>
 			<?php } ?>
 		</footer>
 		<?php
