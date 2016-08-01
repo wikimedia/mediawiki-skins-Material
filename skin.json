@@ -1,0 +1,36 @@
+{
+	"name": "Material", 
+	"author": "Samantha Nguyen",
+	"url": "https://www.mediawiki.org/wiki/Skin:Material",
+	"descriptionmsg": "material-desc",
+	"namemsg": "material",
+	"license-name": "GPL-3.0+",
+	"type": "skin",
+	"ValidSkinNames": {
+		"material": "Material"
+	},
+	"AutoloadClasses": {
+		"SkinFooBar": "FooBar.skin.php"
+	},
+	"MessageDirs": {
+		"Material": "i18n"
+	},
+	"ResourceModules": {
+		"skins.material": {
+				"styles": {
+						"resources/screen.css": { "media": "screen" },
+						"resources/print.css": { "media": "print" }
+				}
+		},
+		"skins.material.js": {
+			"scripts": [
+			],
+			"position": "top",
+			"dependencies": "jquery.ui.dialog"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Material"
+	},
+}
