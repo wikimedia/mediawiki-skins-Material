@@ -14,8 +14,7 @@ As it's continuously being developed, we keep in mind seven important factors li
 
 # How to install
 1. Download the files into <code>[$IP](https://www.mediawiki.org/wiki/Manual:$IP)/skins/Material</code>
-2. In the file named <code>LocalSettings.php</code>, add the following line:
- * ```wfLoadSkin( 'Material' );```
+2. In the file named <code>LocalSettings.php</code>, add the following line: ```wfLoadSkin( 'Material' );```
 3. You can now verify that the skin is installed by checking Special:Version!
 
 **Note**: This skin only supports MediaWiki 1.26.x and above as MediaWiki 1.25.x is currently deprecated.
