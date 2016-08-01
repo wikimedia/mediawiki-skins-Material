@@ -4,6 +4,10 @@
  *
  * @file
  * @ingroup Skins
+ * @author Samantha Nguyen
+ * @author MtmNC
+ * @author Jack Phoenix
+ * @author George Barnick
  */
 
 // SkinTemplate class
