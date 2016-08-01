@@ -1,0 +1,28 @@
+{
+	"name": "mediawiki/material-skin",
+	"type": "mediawiki-skin",
+	"description": "The Material Design language created by Google, captured in MediaWiki software",
+	"keywords": [
+		"MediaWiki",
+		"Skin"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Skin:Material",
+	"license": "GPL-3.0+",
+	"authors": [
+	{
+		"name": "Samantha Nguyen",
+		"name": "MtMNC",
+		"name": "Jack Phoenix",
+		"name":	"George Barnick"
+	}
+	],
+	"support": {
+		"wiki": "https://www.mediawiki.org/wiki/Skin:Material",
+		"forum": "https://www.mediawiki.org/wiki/Skin_talk:Material",
+		"source": "https://github.com/SamanthaNguyen/mediawiki-skins-Material.git",
+		"issues": "https://github.com/SamanthaNguyen/mediawiki-skins-Material/issues"
+	},
+	"require": {
+		"php": ">=5.4.4"
+	}
+}
