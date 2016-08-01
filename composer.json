@@ -24,5 +24,6 @@
 	},
 	"require": {
 		"php": ">=5.4.4"
+		"param-processor/param-processor": "~1.0.0"
 	}
 }
