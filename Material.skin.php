@@ -12,10 +12,10 @@
 
 // SkinTemplate class
 // @ingroup Skins
-class SkinFooBar extends SkinTemplate {
+class SkinMaterial extends SkinTemplate {
 	public $skinname = 'material', 
 		$stylename = 'Material',
-		$template = 'FooBarTemplate', $useHeadElement = true;
+		$template = 'MaterialTemplate', $useHeadElement = true;
 
 	// Add JS via ResourceLoader
  	// @param OutputPage $out
