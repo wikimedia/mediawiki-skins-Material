@@ -1,7 +1,7 @@
 {
 	"name": "Material", 
 	"namemsg": "skinname-Material",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -38,6 +38,9 @@
 					},
 					"material/styles/main.less": {
 						"media": "screen"
+					},
+					"material/styles/toc.less": {
+						"media": "screen"
 					}
 				}
 		},
@@ -52,6 +55,11 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteSkinPath": "Material"
+	},
+	"ResourceModuleSkinStyles": {
+		"material": {
+			"+mediawiki.special.preferences": "material/styles/preferences.less"
+		}
 	},
 	"manifest_version": 1
 }
