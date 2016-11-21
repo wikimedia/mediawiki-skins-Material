@@ -39,9 +39,22 @@
 					"material/styles/main.less": {
 						"media": "screen"
 					},
+					"material/styles/components/categories.less": {
+						"media": "screen"	
+					},
+					"material/styles/components/header.less": {
+						"media": "screen"	
+					},
+					"material/styles/components/sidebar.less": {
+						"media": "screen"	
+					},
+					"material/styles/components/tabs.less": {
+						"media": "screen"	
+					},
 					"material/styles/components/toc.less": {
 						"media": "screen"
 					}
+					
 				}
 		},
 		"skins.material.js": {
