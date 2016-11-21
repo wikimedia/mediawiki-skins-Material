@@ -39,7 +39,7 @@
 					"material/styles/main.less": {
 						"media": "screen"
 					},
-					"material/styles/toc.less": {
+					"material/styles/components/toc.less": {
 						"media": "screen"
 					}
 				}
@@ -58,7 +58,7 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"material": {
-			"+mediawiki.special.preferences": "material/styles/preferences.less"
+			"+mediawiki.special.preferences": "material/styles/components/preferences.less"
 		}
 	},
 	"manifest_version": 1
