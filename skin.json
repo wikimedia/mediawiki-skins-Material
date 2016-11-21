@@ -36,12 +36,6 @@
 					"material/styles/base/md-ui.base.variables.less": {
 						"media": "screen"
 					},
-					"material/styles/base/md-ui.base.colors.less": {
-						"media": "screen"
-					},
-					"material/styles/base/md-ui.base.icons.less": {
-						"media": "screen"
-					},
 					"material/styles/base/md-ui.base.main.less": {
 						"media": "screen"
 					},
