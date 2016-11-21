@@ -1,23 +1,21 @@
-// Material Design Icons - basic styling
+// Material Design Icons
 
 //size mapping
-$md-icons-sizes: (
-	md-18: 18px,
-	md-24: 24px,
-	md-36: 36px,
-	md-48: 48px,
-	md-60: 60px,
-	md-72: 72px,
-	md-84: 84px,
-	md-96: 96px
-);
+@md-ui-icon-size-map:
+	'18px',
+	'24px',
+	'36px',
+	'48px',
+	'60px',
+	'72px',
+	'84px',
+	'96px';
 
 //rotation mapping
-$md-icons-rotate: (
-	md-rotate-90: 90,
-	md-rotate-180: 180,
-	md-rotate-270: 270
-);
+@md-ui-icon-rotate-map:
+	90,
+	180,
+	270;
 
 .material-icons {
 	font-style: normal;
@@ -36,35 +34,38 @@ $md-icons-rotate: (
 		}
 	}
 
-	//flip
-	.md-flip-horizontal {
-		-webkit-transform: scale(-1, 1);
-		-moz-transform: scale(-1, 1);
-		-ms-transform: scale(-1, 1);
-		transform: scale(-1, 1);
-	}
-
-	.md-flip-vertical {
-		-webkit-transform: scale(1, -1);
-		-moz-transform: scale(1, -1);
-		-ms-transform: scale(1, -1);
-		transform: scale(1, -1);
-	}
-
-	//sizes
-	@each $value, $sizes in $md-icons-sizes {
-		.#{$value} {
-			font-size: $sizes;
+	.md-flip( $flip-direction ) {
+		& when ( $flip-direction = vertical ) {
+			-webkit-transform: scale(1, -1);
+			-moz-transform: scale(1, -1);
+			-ms-transform: scale(1, -1);
+			transform: scale(1, -1);
+		}
+		& when ( $flip-direction = horizontal ) {
+			-webkit-transform: scale(-1, 1);
+			-moz-transform: scale(-1, 1);
+			-ms-transform: scale(-1, 1);
+			transform: scale(-1, 1);
 		}
 	}
 
+	//sizes
+	.md-ui-icon-size( $md-ui-icon-size ) {
+		for( $md-icon-size-map ); -each( $md-icon-size ) {
+			font-size: $md-icon-size ;
+		}
+	}
 	//rotation
-	@each $value, $degrees in $md-icons-rotate {
-		.#{$value} {
-			-webkit-transform: rotate($degrees + deg);
-			-moz-transform: rotate($degrees + deg);
-			-ms-transform: rotate($degrees + deg);
-			transform: rotate($degrees + deg);
+	.rotate( $degrees ) {
+		-webkit-transform: rotate( $degrees + deg );
+		-moz-transform: rotate( $degrees + deg );
+		-ms-transform: rotate( $degrees + deg );
+		transform: rotate( $degrees + deg );
+	}
+
+	.md-ui-icon-rotate( $md-ui-icon-rotate ) {
+		for ( $md-ui-icon-rotate-map ); -each( $md-ui-icon-rotate ) {
+			.rotate( $md-ui-icon-rotate );
 		}
 	}
 }
