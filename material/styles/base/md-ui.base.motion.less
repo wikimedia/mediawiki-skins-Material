@@ -1,40 +1,35 @@
-.transition ( $transition ) {
-	-webkit-transition: $transition;
-	transition: $transition;
-}
-
-.transition-property-prop( $property ) {
- 	-webkit-transition-property: $property;
- 	transition-property:         $property;
-}
-
-.transition-property-duration( $duration ) {
-	-webkit-transition-property: $duration;
- 	transition-property:         $duration;
-}
-
-.transition-timing-function( $timing ) {
-	-webkit-transition-timing-function: $timing;
-	transition-timing-function:         $timing;
-}
-
-.transition-delay( $delay ) {
-	-webkit-transition-delay: $delay;
-	transition-delay:         $delay;
-}
-
-/* curve function */
-.curve( $curve-type ) {
-	& when( $curve-type = 'standard' ) {
-		.transition( $property 1s cubic-bezier( 0.4, 0.0, 0.2, 1.0 ) 0 );
+@md-ui-motion-transition-map: 'transition', 'property', 'duration', 'function', 'delay';
+.transition( @md-ui-motion-transition-property, @value ) {
+	& when ( @md-ui-motion-transition-property =  extract( @md-ui-motion-transition-map, 1 ) ) {
+		-webkit-transition: @value;
+			transition: @value;
 	}
-	& when( $curve-type = 'decelerate' ) {
-		.transition( $property 1s cubic-bezier( 0.0, 0.0, 0.2, 1.0 ) 0 );
+	& when ( @md-ui-motion-transition-property =  extract( @md-ui-motion-transition-map, 2 ) ) {
+		-webkit-transition-property: @value;
+			transition-property: @value;
 	}
-	& when( $curve-type = 'accelerate' ) {
-		.transition( $property 1s cubic-bezier( 0.4, 0.0, 1.0, 1.0 ) 0 );
+	& when ( @md-ui-motion-transition-property =  extract( @md-ui-motion-transition-map, 4 ) ) {
+		-webkit-transition-timing-function: @value;
+			transition-timing-function: @value;
 	}
-	& when( $curve-type = 'sharp' ) {
-		.transition( $property 1s cubic-bezier( 0.4, 0.0, 0.6, 1.0 ) 0 );
+	& when ( @md-ui-motion-transition-property =  extract( @md-ui-motion-transition-map, 5 ) ) {
+		-webkit-transition-delay: @value;
+			transition-delay: @value;
+	}
+}
+
+@md-ui-motion-curve-map: 'standard', 'decelerate', 'accelerate', 'sharp';
+.md-ui-motion-curve( @md-ui-motion-curve-type ) {
+	& when( @md-ui-motion-curve-type = extract( @md-ui-motion-curve-map, 1 ) ) {
+		.transition( 'transition', 1s cubic-bezier( 0.4, 0.0, 0.2, 1.0 ) 0 );
+	}
+	& when( @md-ui-motion-curve-type = extract( @md-ui-motion-curve-map, 2 ) ) {
+		.transition( 'transition', 1s cubic-bezier( 0.0, 0.0, 0.2, 1.0 ) 0 );
+	}
+	& when( @md-ui-motion-curve-type = extract( @md-ui-motion-curve-map, 3) ) {
+		.transition( 'transition', 1s cubic-bezier( 0.4, 0.0, 1.0, 1.0 ) 0 );
+	}
+	& when( @md-ui-motion-curve-type = extract( @md-ui-motion-curve-map, 4) ) {
+		.transition( 'transition', 1s cubic-bezier( 0.4, 0.0, 0.6, 1.0 ) 0 );
 	}
 }
