@@ -23,21 +23,17 @@
 	transition-delay:         $delay;
 }
 
-/* standard curve */
-.curve-standard( $property ) {
-	transition( $property 1s cubic-bezier( 0.4, 0.0, 0.2, 1.0 ) 0 );
-}
-/* deceleration curve */
-.curve-decelerate( $property ) {
-	transition( $property 1s cubic-bezier( 0.0, 0.0, 0.2, 1.0 ) 0 );
-}
-
-/* acceleration curve */
-.curve-accelerate( $property ) {
-	transition( $property 1s cubic-bezier( 0.4, 0.0, 1.0, 1.0 ) 0 );
-}
-
-/* sharp curve */
-.curve-sharp( $property ) {
-	transition( $property 1s cubic-bezier( 0.4, 0.0, 0.6, 1.0 ) 0 );
-}
+/* curve function */
+.curve( $curve-type ) {
+	& when( $curve-type = 'standard' ) {
+		.transition( $property 1s cubic-bezier( 0.4, 0.0, 0.2, 1.0 ) 0 );
+	}
+	& when( $curve-type = 'decelerate' ) {
+		.transition( $property 1s cubic-bezier( 0.0, 0.0, 0.2, 1.0 ) 0 );
+	}
+	& when( $curve-type = 'accelerate' ) {
+		.transition( $property 1s cubic-bezier( 0.4, 0.0, 1.0, 1.0 ) 0 );
+	}
+	& when( $curve-type = 'sharp' ) {
+		.transition( $property 1s cubic-bezier( 0.4, 0.0, 0.6, 1.0 ) 0 );
+	}
