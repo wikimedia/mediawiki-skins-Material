@@ -25,3 +25,6 @@ This is a list for the pages so you can use custom CSS and/or JS for your site.
 * Personal JS is located at ```Special:Mypage/material.js``` / ```User:<username>/material.js```
 * Wiki CSS is located at ```MediaWiki:Material.css```
 * Wiki JS is located at ```MediaWiki:Material.js```
+
+# Demo
+http://doodleburp.x10host.com/wiki/Main_Page 
