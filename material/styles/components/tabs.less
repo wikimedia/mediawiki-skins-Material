@@ -1,0 +1,31 @@
+.content-tabs {
+	background: #303f9f;
+	list-style: none;
+	padding: 0 0 0 80px;
+	margin: 0 0 2em 0;
+	li {
+		border-bottom: 2px solid transparent;
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 20px 24px;
+		transition: .2s ease-in-out;
+		cursor: pointer;
+		 a {
+			color: rgba(255,255,255,.7);
+		}
+		&.selected {
+			border-bottom: 2px solid #ffeb3b;
+			a {
+				color: #fff;
+			}
+		}
+		&:hover {
+			background: #b2ebf2;
+			a {
+				text-decoration: none;	
+			}
+		}
+	}
+}
