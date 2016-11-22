@@ -35,7 +35,7 @@ class MaterialTemplate extends BaseTemplate {
 		global $wgVersion;
 		$this->html( 'headelement' );
 		?>
-		<header id="mw-header" role="group">
+		<header id="mw-md-ui-component-header" role="group">
 			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
 				<img id="mw-logo-image" role="banner" src="<?php $this->text( 'logopath' ); ?>" alt="<?php $this->text( 'sitename' ) ?>" />
 			</a>
@@ -69,17 +69,17 @@ class MaterialTemplate extends BaseTemplate {
 						<?php
 						} elseif ( class_exists( 'wAvatar' ) && !$this->data['loggedin'] ) { //socialProfile:T and logged in:F
 							?>
-							<span class="avatar"><i class="material-icons">avatar circle</i></span>
+							<span class="avatar"><i class="material-icons">account circle</i></span>
 							<span class="username"><?php echo $materialGuest ?></span>
 						<?php
 						} elseif ( !class_exists( 'wAvatar' ) && $this->data['loggedin'] ) { //socialProfile:F and logged in:T
 							?>
-							<span class="avatar"><i class="material-icons">avatar circle</i></span>
+							<span class="avatar"><i class="material-icons">account circle</i></span>
 							<span class="username"><?php echo $materialUsername ?></span>
 						<?php
 						} elseif ( !class_exists( 'wAvatar' ) && !$this->data['loggedin'] ) { //socialProfile:F and logged in:F
 							?>
-							<span class="avatar"><i class="material-icons">avatar circle</i></span>
+							<span class="avatar"><i class="material-icons">account circle</i></span>
 							<span class="username"><?php echo $materialGuest ?></span>
 						<?php
 						}
@@ -125,7 +125,7 @@ class MaterialTemplate extends BaseTemplate {
 				<?php $this->html( 'sitenotice' ); ?>
 			</div>
 		<?php } ?>
-		<div class="mw-body-content md-tile" role="main">
+		<main class="mw-body-content md-tile">
 			<?php if ( $this->data['title'] != '' ) { ?>
 				<section id="title-section">
 					<?php // page status indicators
@@ -167,8 +167,8 @@ class MaterialTemplate extends BaseTemplate {
 					$this->html( 'dataAfterContent' );
 				}
 			?>
-		</div>
-		<footer id="mw-footer" role="contentinfo">
+		</main>
+		<footer id="mw-md-ui-component-footer" role="contentinfo">
 			<?php foreach ( $this->getFooterLinks() as $category => $links ) { ?>
 				<nav id="nav-footer" role="navigation">
 					<ul>

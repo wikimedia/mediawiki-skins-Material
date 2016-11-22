@@ -1,7 +1,7 @@
 {
 	"name": "Material",
 	"namemsg": "skinname-Material",
-	"version": "1.2.0",
+	"version": "1.2.7",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -10,7 +10,6 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Material",
 	"descriptionmsg": "material-desc",
-	"namemsg": "material",
 	"license-name": "GNU-GPL-3.0+",
 	"type": "skin",
 	"ValidSkinNames": {
@@ -43,6 +42,9 @@
 						"media": "screen"
 					},
 					"material/styles/components/md-ui.components.datatable.less": {
+						"media": "screen"
+					},
+					"material/styles/components/md-ui.components.footer.less": {
 						"media": "screen"
 					},
 					"material/styles/components/md-ui.components.header.less": {

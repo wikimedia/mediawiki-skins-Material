@@ -4,17 +4,35 @@
 	"description": "The Material Design language created by Google, captured in MediaWiki software",
 	"keywords": [
 		"MediaWiki",
-		"Skin"
+		"Skin",
+		"Google Material Design"
 	],
 	"homepage": "https://www.mediawiki.org/wiki/Skin:Material",
 	"license": "GNU-GPL-3.0+",
 	"authors": [
-	{
-		"name": "Samantha Nguyen",
-		"name": "MtMNC",
-		"name": "Jack Phoenix",
-		"name":	"George Barnick"
-	}
+		{
+			"name": "Samantha Nguyen",
+			"email": "samanthanguyen1116@gmail.com",
+			"homepage": "https://mediawiki.org/wiki/User:SamanthaNguyen",
+			"role": "Developer"
+		},
+		{
+			"name": "Jack Phoenix",
+			"email": "jack@countervandalism.net",
+			"homepage": "https://mediawiki.org/wiki/User:Jack_Phoenix",
+			"role": "Developer"
+		},
+		{
+			"name": "George Barnick",
+			"email": "georgebarnick@gmail.com",
+			"homepage": "https://georgebarnick.photo",
+			"role": "Developer"
+		},
+		{
+			"name": "MtMNC",
+			"homepage": "https://mediawiki.org/wiki/User:MtMNNC",
+			"role": "Developer"
+		}
 	],
 	"support": {
 		"wiki": "https://www.mediawiki.org/wiki/Skin:Material",
@@ -23,7 +41,12 @@
 		"issues": "https://github.com/SamanthaNguyen/mediawiki-skins-Material/issues"
 	},
 	"require": {
+		"MediaWiki": ">= 1.26.0",
 		"php": ">=5.4.4",
 		"param-processor/param-processor": "~1.0.0"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false
 	}
 }
