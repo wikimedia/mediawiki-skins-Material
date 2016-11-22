@@ -1,7 +1,7 @@
 {
 	"name": "Material",
 	"namemsg": "skinname-Material",
-	"version": "1.2.7",
+	"version": "1.2.8",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -69,10 +69,6 @@
 			"position": "top",
 			"dependencies": "jquery.ui.dialog"
 		}
-	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteSkinPath": "Material"
 	},
 	"ResourceModuleSkinStyles": {
 		"material": {
