@@ -1,7 +1,7 @@
 {
 	"name": "Material",
 	"namemsg": "skinname-Material",
-	"version": "1.2.8",
+	"version": "1.2.9",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -28,39 +28,47 @@
 	},
 	"ResourceModules": {
 		"skins.material": {
-				"styles": {
-					"material/styles/base/md-ui.base.print.less": {
-						"media": "print"
-					},
-					"material/styles/base/md-ui.base.variables.less": {
-						"media": "screen"
-					},
-					"material/styles/base/md-ui.base.main.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.categories.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.datatable.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.footer.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.header.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.sidebar.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.tabs.less": {
-						"media": "screen"
-					},
-					"material/styles/components/md-ui.components.toc.less": {
-						"media": "screen"
-					}
-
+			"styles": {
+				"material/styles/base/md-ui.base.print.less": {
+					"media": "print"
+				},
+				"material/styles/base/md-ui.base.colors.less": {
+					"media": "screen"
+				},
+				"material/styles/base/md-ui.base.icons.less": {
+					"media": "screen"
+				},
+				"material/styles/base/md-ui.base.motion.less": {
+					"media": "screen"
+				},
+				"material/styles/base/md-ui.base.variables.less": {
+					"media": "screen"
+				},
+				"material/styles/base/md-ui.base.main.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.categories.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.datatable.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.footer.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.header.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.sidebar.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.tabs.less": {
+					"media": "screen"
+				},
+				"material/styles/components/md-ui.components.toc.less": {
+					"media": "screen"
 				}
+			}
 		},
 		"skins.material.js": {
 			"scripts": [
