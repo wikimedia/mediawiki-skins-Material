@@ -58,7 +58,7 @@ class MaterialTemplate extends BaseTemplate {
 			<nav id="nav-user" role="navigation">
 				<span class="username-wrapper">
 					<?php
-						$materialUsername = htmlspecialchars($this->getSkin()->getUser()->getName(), ENT_QUOTES);
+						$materialUsername = htmlspecialchars( $this->getSkin()->getUser()->getName(), ENT_QUOTES );
 						$materialGuest = $this->getSkin()->msg( 'material-guest' )->text();
 						if ( class_exists( 'wAvatar' ) && $this->data['loggedin'] ) { //socialProfile:T and logged in:T
 							$materialSPAvatar = new wAvatar( $this->getSkin()->getUser()->getId(), 'l' );
@@ -69,17 +69,17 @@ class MaterialTemplate extends BaseTemplate {
 						<?php
 						} elseif ( class_exists( 'wAvatar' ) && !$this->data['loggedin'] ) { //socialProfile:T and logged in:F
 							?>
-							<span class="avatar"><i class="material-icons">account circle</i></span>
+							<span class="avatar"><i class="material-icons">account_circle</i></span>
 							<span class="username"><?php echo $materialGuest ?></span>
 						<?php
 						} elseif ( !class_exists( 'wAvatar' ) && $this->data['loggedin'] ) { //socialProfile:F and logged in:T
 							?>
-							<span class="avatar"><i class="material-icons">account circle</i></span>
+							<span class="avatar"><i class="material-icons">account_circle</i></span>
 							<span class="username"><?php echo $materialUsername ?></span>
 						<?php
 						} elseif ( !class_exists( 'wAvatar' ) && !$this->data['loggedin'] ) { //socialProfile:F and logged in:F
 							?>
-							<span class="avatar"><i class="material-icons">account circle</i></span>
+							<span class="avatar"><i class="material-icons">account_circle</i></span>
 							<span class="username"><?php echo $materialGuest ?></span>
 						<?php
 						}
