@@ -19,7 +19,7 @@
 		"SkinMaterial": "Material.skin.php",
 		"MaterialTemplate": "Material.skin.php"
 	},
-	"MessageDirs": {
+	"MessagesDirs": {
 		"Material": [
 			"i18n"
 		]			
