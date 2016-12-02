@@ -1,6 +1,6 @@
 {
 	"name": "Material",
-	"namemsg": "skinname-Material",
+	"namemsg": "skinname-material",
 	"version": "1.3.1",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
@@ -10,7 +10,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Material",
 	"descriptionmsg": "material-desc",
-	"license-name": "GNU-GPL-3.0+",
+	"license-name": "GPL-3.0+",
 	"type": "skin",
 	"ValidSkinNames": {
 		"material": "Material"
@@ -20,7 +20,9 @@
 		"MaterialTemplate": "Material.skin.php"
 	},
 	"MessageDirs": {
-		"Material": "i18n"
+		"Material": [
+			"i18n"
+		]			
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
