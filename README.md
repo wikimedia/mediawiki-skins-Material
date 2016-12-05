@@ -27,4 +27,4 @@ This is a list for the pages so you can use custom CSS and/or JS for your site.
 * Wiki JS is located at ```MediaWiki:Material.js```
 
 # Demo
-http://doodleburp.x10host.com/wiki/Main_Page 
+http://doodleburp.x10host.com/wiki/Main_Page?useskin=material
