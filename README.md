@@ -1,3 +1,6 @@
+# Demo
+* http://social-tools.wmflabs.org/wiki/Special:RecentChanges?useskin=material
+
 # What is 'Material'? 
 > The Material Design language created by Google, captured in MediaWiki software
 
@@ -11,6 +14,9 @@ As it's continuously being developed, we keep in mind seven important factors li
 - **Security**
 - **Navigation**
 - **Internationalization** (i18n)
+
+# Documentation
+https://www.mediawiki.org/wiki/Skin:Material
 
 # How to install
 1. Download the files into <code>[$IP](https://www.mediawiki.org/wiki/Manual:$IP)/skins/Material</code>
@@ -26,5 +32,5 @@ This is a list for the pages so you can use custom CSS and/or JS for your site.
 * Wiki CSS is located at ```MediaWiki:Material.css```
 * Wiki JS is located at ```MediaWiki:Material.js```
 
-# Demo
-http://doodleburp.x10host.com/wiki/Main_Page?useskin=material
+
+
