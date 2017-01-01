@@ -5,5 +5,8 @@
 		]
 	},
 	"skinname-material": "Material",
-	"material-desc": "The Material Design language created by Google, captured in MediaWiki software"
+	"material-desc": "The Material Design language created by Google, captured in MediaWiki software",
+	"material.css": "/* CSS placed here will affect users of the Material skin */",
+	"material.js": "/* Any JavaScript here will be loaded for users using the Material skin */",
+	"material-guest": "Guest"
 }
