@@ -1,7 +1,5 @@
 {
-	"@metadata": {
-		"authors": []
-	},
+	"@metadata": [],
 	"skinname-material": "{{optional}}",
 	"material-desc": "{{desc|what=skin|name=Material|url=https://www.mediawiki.org/wiki/Skin:Material}}",
 	"material.css": "{{optional}}",
