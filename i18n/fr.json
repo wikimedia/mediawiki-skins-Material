@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Kareyac"
+			"Kareyac",
+			"Eric.LEWIN"
 		]
 	},
-	"material-desc": "Le langage Style Matériau créé par Google, intégré dans le logiciel MédiaWiki",
+	"material-desc": "Le langage “Material Design” (« ''conception de la matérialisation'' ») créé par Google, intégré dans le logiciel MédiaWiki",
 	"material-guest": "Invité"
 }
