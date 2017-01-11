@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Hamilton Abreu"
 		]
 	},
+	"material-desc": "A linguagem \"Material Design\" criada pela Google, integrada no software MediaWiki",
 	"material-guest": "Convidado"
 }
