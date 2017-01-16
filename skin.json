@@ -1,7 +1,7 @@
 {
 	"name": "Material",
 	"namemsg": "skinname-material",
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -22,7 +22,7 @@
 	"MessagesDirs": {
 		"Material": [
 			"i18n"
-		]			
+		]
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",

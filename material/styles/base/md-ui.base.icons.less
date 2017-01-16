@@ -23,24 +23,24 @@
 	.md-theme( @md-theme, @activeStatus:active ) {
 		& when ( @md-theme = dark ) {
 			& when ( @activeStatus = active ) {
-            			color: rgba(0, 0, 0, 0.54);
-        		}
-	        	& when ( @activeStatus = inactive ) {
-	            		color: rgba(0, 0, 0, 0.26);
-	        	}
+				color: rgba(0, 0, 0, 0.54);
+			}
+			& when ( @activeStatus = inactive ) {
+				color: rgba(0, 0, 0, 0.26);
+			}
 		}
 		& when ( @md-theme = light ) {
-        		& when ( @activeStatus = active ) {
-            			color: rgba(255, 255, 255, 1);
-        		}
-        		& when ( @activeStatus = inactive ) {
-            			color: rgba(255, 255, 255, 0.3);
-        		}
+			& when ( @activeStatus = active ) {
+				color: rgba(255, 255, 255, 1);
+			}
+			& when ( @activeStatus = inactive ) {
+				color: rgba(255, 255, 255, 0.3);
+			}
 		}
 	}
 
 	.md-flip( @flip-direction ) {
-    	& when ( @flip-direction = vertical ) {
+	& when ( @flip-direction = vertical ) {
 			-webkit-transform: scale(1, -1);
 			-moz-transform: scale(1, -1);
 			-ms-transform: scale(1, -1);
