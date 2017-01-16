@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Fitoschido"
 		]
 	},
+	"material-desc": "El lenguaje Material Design creado por Google, capturado en el ''software'' MediaWiki",
 	"material-guest": "Invitado"
 }
