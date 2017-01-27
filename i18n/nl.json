@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Rcdeboer"
 		]
 	},
+	"material-desc": "De ''Material Design''-taal ontwikkeld door Google, vastgelegd in MediaWiki-software",
 	"material-guest": "Gast"
 }
