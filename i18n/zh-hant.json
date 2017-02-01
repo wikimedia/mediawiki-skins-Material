@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Wehwei"
 		]
 	},
+	"material-desc": "Material Design 語言由 Google 提出，在 MediaWiki 軟體中獲取。",
 	"material-guest": "訪客"
 }
