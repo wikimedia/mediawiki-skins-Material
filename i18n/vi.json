@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"material-desc": "Phong cách thiết kế Material Design của Google",
+	"material.css": "/* Mã CSS tại đây sẽ ảnh hưởng đến những người dùng sử dụng giao diện Material */",
+	"material.js": "/* Mã JavaScript tại đây sẽ được tải khi người dùng sử dụng giao diện Material */",
+	"material-guest": "Khách"
+}
