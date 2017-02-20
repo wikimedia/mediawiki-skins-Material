@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"StanProg"
 		]
 	},
+	"material-desc": "Езикът Material Design на Google, пресъздаден във вид на облик за МедияУики",
 	"material-guest": "Гост"
 }
