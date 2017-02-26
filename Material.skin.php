@@ -15,12 +15,22 @@ class SkinMaterial extends SkinTemplate {
 		$stylename = 'Material',
 		$template = 'MaterialTemplate',
 		$useHeadElement = true;
-	// Add JS via ResourceLoader
+
+	/**
+	 * Load JS modules via ResourceLoader
+	 *
+	 * @param OutputPage $out
+	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 		$out->addModules( 'skins.material.js' );
 	}
-	// Add CSS via ResourceLoader
+
+	/**
+	 * Load CSS modules via ResourceLoader
+	 *
+	 * @param OutputPage $out
+	 */
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( array(
