@@ -1,1 +1,67 @@
+.mw-special-Preferences .content-tabs {
+	display: none;
+}
 
+#preftoc {
+	background: #303f9f;
+	list-style: none;
+	padding: .9em 1em 1em 1.5em;
+	margin: -2em -2em 0 -2em;
+	display: block;
+
+	li {
+		display: inline-block;
+
+		a {
+			color: rgba( 255, 255, 255, .7 );
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			padding: 1.15em 1.25em;
+			transition: .2s ease-in-out;
+
+			&:hover {
+				background: #3f51b5;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		&.selected {
+			a {
+				border-bottom: 2px solid #ffeb3b;
+				color: #fff;
+				font-weight: 500;
+				&:focus {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.prefsection {
+	border: 0;
+
+	.mainLegend {
+		font-size: 1.75em;
+		padding: 0 0 .5em 0;
+		margin: 0;
+	}
+
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+
+		legend {
+			font-size: 1.25em;
+		}
+
+		table:not(.mw-htmlform-matrix) {
+			border: 1px solid #ddd;
+			border-radius: .125em;
+			padding: 1.5em;
+		}
+	}
+}
