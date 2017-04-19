@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
+	"material-desc": "A linguaxe \"Material Design\" creada por Google, integrada no software MediaWiki",
 	"material-guest": "Convidado"
 }
