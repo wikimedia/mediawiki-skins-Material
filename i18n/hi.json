@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sfic"
+			"Sfic",
+			"Anoop rao"
 		]
 	},
-	"skinname-material": "मटेरियल",
+	"skinname-material": "सामग्री",
 	"material-desc": "गूगल द्वारा निर्मित सामग्री डिजाइन भाषा, मीडियाविकि सॉफ्टवेयर द्वारा लिया गया।",
 	"material-guest": "अतिथि"
 }
