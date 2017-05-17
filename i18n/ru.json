@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Facenapalm"
 		]
 	},
+	"material-desc": "Язык Material Design, созданный Google, зафиксировали в программном обеспечении MediaWiki",
 	"material-guest": "Гость"
 }
