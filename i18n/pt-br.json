@@ -6,7 +6,7 @@
 		]
 	},
 	"skinname-material": "Material",
-	"material-desc": "A linguagem Material Design criada pelo Google, capturada no software MediaWiki",
+	"material-desc": "A linguagem Material Design criada pela Google, capturada no software MediaWiki",
 	"material.css": "/* CSS colocado aqui irá afetar usuários do tema Material */",
 	"material.js": "/* Qualquer JavaScript aqui colocado será carregado para usuários usando o tema Material */",
 	"material-guest": "Convidado"
