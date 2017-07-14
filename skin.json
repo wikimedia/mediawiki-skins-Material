@@ -1,7 +1,7 @@
 {
 	"name": "Material",
 	"namemsg": "skinname-material",
-	"version": "1.3.5",
+	"version": "1.4.0",
 	"author": [
 		"[https://mediawiki.org/wiki/User:SamanthaNguyen SamanthaNguyen]",
 		"[https://mediawiki.org/wiki/User:MtMNC MtMNC]",
@@ -32,12 +32,6 @@
 		"remoteSkinPath": "Material"
 	},
 	"ResourceModules": {
-		"skins.material": {
-			"dependencies": [
-				"skins.material.components",
-				"skins.material.base"
-			]
-		},
 		"skins.material.components": {
 			"styles": {
 				"material/styles/components/md-ui.components.datatable.less": {
@@ -59,16 +53,7 @@
 		},
 		"skins.material.base": {
 			"styles": {
-				"material/styles/base/md-ui.base.print.less": {
-					"media": "print"
-				},
 				"material/styles/base/md-ui.base.colors.less": {
-					"media": "screen"
-				},
-				"material/styles/base/md-ui.base.icons.less": {
-					"media": "screen"
-				},
-				"material/styles/base/md-ui.base.motion.less": {
 					"media": "screen"
 				},
 				"material/styles/base/md-ui.base.variables.less": {
@@ -82,7 +67,7 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"material": {
-			"+mediawiki.skinning.interface": "material/styles/mediawiki/skinning.interface.css",
+			"+mediawiki.skinning.interface": "material/styles/mediawiki/skinning.interface.less",
 			"+mediawiki.special.preferences.styles": "material/styles/mediawiki/specials.preferences.styles.less",
 			"+mediawiki.toc": "material/styles/mediawiki/toc.less"
 		}

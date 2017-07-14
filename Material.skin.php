@@ -35,7 +35,8 @@ class SkinMaterial extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( array(
 			'mediawiki.skinning.interface',
-			'skins.material'
+			'skins.material.base',
+			'skins.material.components'
 		) );
 	}
  }
