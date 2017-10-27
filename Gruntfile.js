@@ -11,6 +11,7 @@ module.exports = function ( grunt ) {
 				'*.js',
 				'**/*.js',
 				'!node_modules/**',
+				'!vendor/**',
 				'!js/overthrow.js'
 			]
 		},
@@ -22,7 +23,8 @@ module.exports = function ( grunt ) {
 			all: [
 				'*.json',
 				'**/*.json',
-				'!node_modules/**'
+				'!node_modules/**',
+				'!vendor/**'
 			]
 		}
 	} );
