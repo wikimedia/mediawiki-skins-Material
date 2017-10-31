@@ -1,6 +1,10 @@
 {
-	"@metadata": [],
-	"skinname-material": "{{optional}}",
+	"@metadata": {
+		"authors": [
+			"Umherirrender"
+		]
+	},
+	"skinname-material": "{{name}}",
 	"material-desc": "{{desc|what=skin|name=Material|url=https://www.mediawiki.org/wiki/Skin:Material}}",
 	"material.css": "{{optional}}",
 	"material.js": "{{optional}}",
