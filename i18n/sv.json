@@ -4,6 +4,9 @@
 			"WikiPhoenix"
 		]
 	},
+	"skinname-material": "Material",
 	"material-desc": "Språket Material Design som skapades av Google, används i MediaWikis programvara",
+	"material.css": "/* CSS som skrivs här kommer att påverka alla användare av utseendet Material */",
+	"material.js": "/* JavaScript här kommer att laddas för dem som använder utseendet Material */",
 	"material-guest": "Gäst"
 }
