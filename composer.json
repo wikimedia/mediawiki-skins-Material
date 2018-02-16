@@ -8,7 +8,7 @@
 		"Google Material Design"
 	],
 	"homepage": "https://www.mediawiki.org/wiki/Skin:Material",
-	"license": "GPL-3.0+",
+	"license": "GPL-3.0-or-later",
 	"authors": [
 		{
 			"name": "Samantha Nguyen",
