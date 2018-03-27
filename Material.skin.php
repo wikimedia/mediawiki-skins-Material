@@ -13,8 +13,7 @@
 class SkinMaterial extends SkinTemplate {
 	public $skinname = 'material',
 		$stylename = 'Material',
-		$template = 'MaterialTemplate',
-		$useHeadElement = true;
+		$template = 'MaterialTemplate';
 
 	/**
 	 * Load JS modules via ResourceLoader
