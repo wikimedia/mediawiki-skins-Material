@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dvorapa"
+		]
+	},
+	"material.css": "/* Zde uvedené CSS bude ovlivňovat pouze vzhled „Material“ */",
+	"material.js": "/* Zde uvedený JavaScript bude použit pouze pro uživatele vzhledu „Material“ */"
+}
