@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Wehwei"
+			"Wehwei",
+			"Kly"
 		]
 	},
-	"material-desc": "Material Design 語言由 Google 提出，在 MediaWiki 軟體中獲取。",
+	"material-desc": "由 Google 創建，在 MediaWiki 軟體中獲取的 Material Design 語言。",
 	"material-guest": "訪客"
 }
