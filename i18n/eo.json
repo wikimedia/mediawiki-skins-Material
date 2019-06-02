@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mirin"
 		]
 	},
+	"material-desc": "La deazjnlingvo Materialo, kreita de Google, enmetita en MediaVikian programaron",
 	"material-guest": "Gasto"
 }
