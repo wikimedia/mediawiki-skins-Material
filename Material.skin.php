@@ -24,21 +24,8 @@ class SkinMaterial extends SkinTemplate {
 		parent::initPage( $out );
 		$out->addModules( 'skins.material.js' );
 	}
+}
 
-	/**
-	 * Load CSS modules via ResourceLoader
-	 *
-	 * @param OutputPage $out
-	 */
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-		$out->addModuleStyles( array(
-			'mediawiki.skinning.interface',
-			'skins.material.base',
-			'skins.material.components'
-		) );
-	}
- }
 // BaseTemplate class
 class MaterialTemplate extends BaseTemplate {
 	public function execute() {

@@ -16,7 +16,18 @@
 	},
 	"type": "skin",
 	"ValidSkinNames": {
-		"material": "Material"
+		"material": {
+			"class": "SkinMaterial",
+			"args": [ {
+				"name": "Material",
+				"responsive": false,
+				"styles": [
+					"mediawiki.skinning.interface",
+					"skins.material.base",
+					"skins.material.components"
+				]
+			} ]
+		}
 	},
 	"AutoloadClasses": {
 		"SkinMaterial": "Material.skin.php",
