@@ -8,8 +8,9 @@
 			"Verdy p"
 		]
 	},
-	"material-desc": "Le langage ''Material Design'' (« ''conception de la matérialisation'' ») créé par Google, capturé dans le logiciel MediaWiki",
-	"material.css": "/* Le CSS placé ici affectera les utilisateurs de l’habillage Material. */",
-	"material.js": "/* Tout JavaScript ici sera chargé pour les utilisateurs utilisant l’habillage Material */",
+	"skinname-material": "Material",
+	"material-desc": "Le langage ''Material Design'' (« conception de matérialisation ») créé par Google, capturé dans le logiciel MediaWiki",
+	"material.css": "/* Le CSS placé ici affectera les utilisateurs de l’habillage Material */",
+	"material.js": "/* Tout code JavaScript placé ici sera chargé avec les pages accédées par les utilisateurs de l’habillage Material */",
 	"material-guest": "Invité"
 }
