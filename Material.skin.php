@@ -40,7 +40,12 @@ class MaterialTemplate extends BaseTemplate {
 				<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>" />
 				<?php
 					echo $this->makeSearchInput( array( 'class' => 'mw-search-input', 'placeholder' => 'Search the Wiki' ) );
-					echo $this->makeSearchButton( 'image', array( 'src' => $this->getSkin()->getSkinStylePath( 'images/magnifying-glass.svg' ), 'alt' => 'search button' ) );
+					echo $this->makeSearchButton( 'image',
+						[
+							'src' => $this->getSkin()->getConfig()->get( 'StylePath' ) . '/Material/images/magnifying-glass.svg',
+							'alt' => 'search button'
+						]
+					);
 				?>
 			</form>
 			<?php // language links
