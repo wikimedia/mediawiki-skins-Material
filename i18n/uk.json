@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"AS"
+			"AS",
+			"DDPAT"
 		]
 	},
+	"skinname-material": "Матеріал",
 	"material-desc": "«Матеріальний» дизайн, заснований у Google, реалізований для MediaWiki",
+	"material.css": "/* CSS, розміщений тут, вплине на користувачів скіна матеріалу */",
+	"material.js": "/* JavaScript, розміщений тут, вплине на користувачів скіна матеріалу */",
 	"material-guest": "Гість"
 }
