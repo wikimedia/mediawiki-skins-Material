@@ -4,6 +4,9 @@
 			"Joetaras"
 		]
 	},
+	"skinname-material": "Material",
 	"material-desc": "'U linguagge Material Design fatte da Google, catturate jndr'à 'u softuer MediaUicchi",
+	"material.css": "/* 'U CSS ca se iacchie aqquà 'u 'ndrucane le utinde d'a masckere Material */",
+	"material.js": "/* Ogne JavaScript aqquà avène carecate pe le utinde ca ausane 'a masckere Material */",
 	"material-guest": "Ospite"
 }
