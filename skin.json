@@ -12,17 +12,21 @@
 	"descriptionmsg": "material-desc",
 	"license-name": "GPL-3.0-or-later",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"type": "skin",
 	"ValidSkinNames": {
 		"material": {
-			"class": "SkinMaterial",
+			"class": "SkinTemplate",
 			"args": [ {
 				"name": "Material",
 				"responsive": false,
+				"bodyOnly": true,
+				"scripts": [
+					"skins.material.js"
+				],
+				"template": "MaterialTemplate",
 				"styles": [
-					"mediawiki.skinning.interface",
 					"skins.material.base",
 					"skins.material.components"
 				]
@@ -30,7 +34,6 @@
 		}
 	},
 	"AutoloadClasses": {
-		"SkinMaterial": "Material.skin.php",
 		"MaterialTemplate": "Material.skin.php"
 	},
 	"MessagesDirs": {
@@ -63,6 +66,20 @@
 			}
 		},
 		"skins.material.base": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-links": true,
+				"content-media": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"content-tables": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true,
+				"elements": true,
+				"interface": true,
+				"logo": true
+			},
 			"styles": {
 				"material/styles/base/md-ui.base.colors.less": {
 					"media": "screen"

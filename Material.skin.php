@@ -10,27 +10,10 @@
  * @author George Barnick
  */
 
-class SkinMaterial extends SkinTemplate {
-	public $skinname = 'material',
-		$stylename = 'Material',
-		$template = 'MaterialTemplate';
-
-	/**
-	 * Load JS modules via ResourceLoader
-	 *
-	 * @param OutputPage $out
-	 */
-	public function initPage( OutputPage $out ) {
-		parent::initPage( $out );
-		$out->addModules( 'skins.material.js' );
-	}
-}
-
 // BaseTemplate class
 class MaterialTemplate extends BaseTemplate {
 	public function execute() {
 		global $wgVersion;
-		$this->html( 'headelement' );
 		?>
 		<header id="mw-md-ui-component-header" role="group">
 			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
@@ -182,8 +165,5 @@ class MaterialTemplate extends BaseTemplate {
 			<?php } ?>
 		</footer>
 		<?php
-		$this->printTrail();
-		echo Html::closeElement( 'body' );
-		echo Html::closeElement( 'html' );
 	}
 }
