@@ -22,8 +22,8 @@ class MaterialTemplate extends BaseTemplate {
 			<form class="mw-search" role="search" id="searchform" action="<?php $this->text( 'wgScript' ); ?>">
 				<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>" />
 				<?php
-					echo $this->makeSearchInput( array( 'class' => 'mw-search-input', 'placeholder' => 'Search the Wiki' ) );
-					echo $this->makeSearchButton( 'image',
+					echo $this->getSkin()->makeSearchInput( array( 'class' => 'mw-search-input', 'placeholder' => 'Search the Wiki' ) );
+					echo $this->getSkin()->makeSearchButton( 'image',
 						[
 							'src' => $this->getSkin()->getConfig()->get( 'StylePath' ) . '/Material/images/magnifying-glass.svg',
 							'alt' => 'search button'
