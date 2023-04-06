@@ -5,5 +5,7 @@
 		]
 	},
 	"material-desc": "Le linguage Material Design create per Google, capturate in software MediaWiki",
+	"material.css": "/* Le codice CSS placiate hic affectara le usatores del apparentia Material */",
+	"material.js": "/* Le codice JavaScript placiate hic essera cargate pro le usatores del apparentia Material */",
 	"material-guest": "Invitato"
 }
