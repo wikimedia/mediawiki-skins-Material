@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"material-desc": "A linguaxe \"Material Design\" creada por Google, integrada no software MediaWiki",
+	"material.css": "/* O CSS colocado aquí afectará aos usuarios da aparencia Material */",
+	"material.js": "/* O código JavaScript colocado aquí cargarase para os usuarios que utilicen a aparencia Material */",
 	"material-guest": "Convidado"
 }
