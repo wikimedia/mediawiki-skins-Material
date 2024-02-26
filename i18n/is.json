@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"material-desc": "Material Design hönnun, búin til af Google, aðlagað MediaWiki hugbúnaði",
+	"material-desc": "Material Design-málið, búið til af Google, aðlagað MediaWiki hugbúnaði",
 	"material-guest": "Gestur"
 }
