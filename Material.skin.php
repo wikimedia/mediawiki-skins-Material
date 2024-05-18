@@ -82,7 +82,7 @@ class MaterialTemplate extends BaseTemplate {
 		<nav id="nav-menu" role="navigation">
 			<span class="menu" aria-label="menu button"><!-- some icon for a menu --></span>
 			<?php foreach ( $this->getSidebar() as $boxName => $box ) { ?>
-				<div id="<?php echo Sanitizer::escapeIdForAttribute( $box['id'] ) ?>" class="sidebar-group" <?php echo Linker::tooltip( $box['id'] ) ?>>
+				<div id="<?php echo htmlspecialchars( Sanitizer::escapeIdForAttribute( $box['id'] ), ENT_QUOTES ) ?>" class="sidebar-group" <?php echo Linker::tooltip( $box['id'] ) ?>>
 				<?php
 				if ( is_array( $box['content'] ) ) { ?>
 					<div class="sidebar-header"><?php echo $boxName ?></div>
