@@ -40,9 +40,6 @@
 		"source": "https://github.com/SamanthaNguyen/mediawiki-skins-Material.git",
 		"issues": "https://github.com/SamanthaNguyen/mediawiki-skins-Material/issues"
 	},
-	"require": {
-		"php": ">=5.4.4"
-	},
 	"config": {
 		"optimize-autoloader": true,
 		"prepend-autoloader": false
