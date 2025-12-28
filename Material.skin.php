@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
 
 /**
@@ -19,7 +20,7 @@ class MaterialTemplate extends BaseTemplate {
 		global $wgVersion;
 		?>
 		<header id="mw-md-ui-component-header" role="group">
-			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
+			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Html::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
 				<img id="mw-logo-image" role="banner" src="<?php $this->text( 'logopath' ); ?>" alt="<?php $this->text( 'sitename' ) ?>" />
 			</a>
 			<form class="mw-search" role="search" id="searchform" action="<?php $this->text( 'wgScript' ); ?>">
