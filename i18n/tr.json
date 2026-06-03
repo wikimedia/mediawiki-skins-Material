@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"HakanIST"
 		]
 	},
+	"skinname-material": "Material",
 	"material-desc": "MediaWiki yazılımında yakalanan Google tarafından oluşturulan Materyal Tasarımı dili",
+	"material.css": "/* CSS placed here will affect users of the Material skin */",
+	"material.js": "/* Any JavaScript here will be loaded for users using the Material skin */",
 	"material-guest": "Misafir"
 }
