@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"skinname-material": "Material",
+	"material-desc": "Dizajnový jazyk Material Design od Googlu, zachytený v softvéri MediaWiki",
+	"material.css": "/* CSS umiestnené tu ovplyvní používateľov témy vzhľadu Material */",
+	"material.js": "/* JavaScript umiestnený tu sa načíta používateľom témy vzhľadu Material */",
+	"material-guest": "Hosť"
+}
