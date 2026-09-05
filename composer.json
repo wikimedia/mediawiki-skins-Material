@@ -42,7 +42,10 @@
 	},
 	"config": {
 		"optimize-autoloader": true,
-		"prepend-autoloader": false
+		"prepend-autoloader": false,
+		"audit": {
+			"block-insecure": false
+		}
 	},
 	"require-dev": {
 		"mediawiki/minus-x": "1.1.3",
